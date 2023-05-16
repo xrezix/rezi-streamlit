@@ -96,7 +96,7 @@ def main():
        [Kaggle](https://www.kaggle.com/avikumart) 
        """)
         a,b,c = st.columns([0.2,0.6,0.2])
-    with b:
+        with b:
         st.image("banner-picture.jpeg", use_column_width=True)
 
 # description about the project and code files       
@@ -119,4 +119,4 @@ st.markdown("Please find GitHub repository link of project: [Click Here](https:/
   
 # run the main function        
 if __name__ == '__main__':
-    main()
+main()
