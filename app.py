@@ -56,18 +56,18 @@ def main():
     with st.form("road_traffic_severity_form"):
          st.subheader("Please enter the following inputs:")
         
-        No_vehicles = st.slider("Number of vehicles involved:",1,7, value=0, format="%d")
-        No_casualties = st.slider("Number of casualties:",1,8, value=0, format="%d")
-        Hour = st.slider("Hour of the day:", 0, 23, value=0, format="%d")
-        collision = st.selectbox("Type of collision:",options=options_types_collision)
-        Age_band = st.selectbox("Driver age group?:", options=options_age)
-        Sex = st.selectbox("Sex of the driver:", options=options_sex)
-        Education = st.selectbox("Education of driver:",options=options_education_level)
-        service_vehicle = st.selectbox("Service year of vehicle:", options=options_services_year)
-        Day_week = st.selectbox("Day of the week:", options=options_day)
-        Accident_area = st.selectbox("Area of accident:", options=options_acc_area)
+         No_vehicles = st.slider("Number of vehicles involved:",1,7, value=0, format="%d")
+         No_casualties = st.slider("Number of casualties:",1,8, value=0, format="%d")
+         Hour = st.slider("Hour of the day:", 0, 23, value=0, format="%d")
+         collision = st.selectbox("Type of collision:",options=options_types_collision)
+         Age_band = st.selectbox("Driver age group?:", options=options_age)
+         Sex = st.selectbox("Sex of the driver:", options=options_sex)
+         Education = st.selectbox("Education of driver:",options=options_education_level)
+         service_vehicle = st.selectbox("Service year of vehicle:", options=options_services_year)
+         Day_week = st.selectbox("Day of the week:", options=options_day)
+         Accident_area = st.selectbox("Area of accident:", options=options_acc_area)
         
-        submit = st.form_submit_button("Predict")
+         submit = st.form_submit_button("Predict")
 
 # encode using ordinal encoder and predict
     if submit:
