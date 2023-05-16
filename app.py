@@ -119,4 +119,4 @@ st.markdown("Please find GitHub repository link of project: [Click Here](https:/
   
 # run the main function        
 if __name__ == '__main__':
-main()
+  main()
