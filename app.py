@@ -81,7 +81,7 @@ def main():
         pred_arr = np.array(num_arr + encoded_arr).reshape(1,-1)        
       
  # predict the target from all the input features
-       prediction = model.predict(pred_arr)
+        prediction = model.predict(pred_arr)
         
         if  prediction == 0:
             st.write(f"The severity prediction is fatal injury⚠")
